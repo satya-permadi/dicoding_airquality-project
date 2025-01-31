@@ -21,7 +21,7 @@ menu = st.sidebar.selectbox("Pilih Analisis:", ["Home", "Pertanyaan 1", "Pertany
 
 # Home Section
 if menu == "Home":
-    st.image("https://github.com/satya-permadi/dicoding_airquality-project/blob/main/Images/Beijing.jpeg")
+    st.image("https://raw.githubusercontent.com/satya-permadi/dicoding_airquality-project/main/Images/Beijing.jpeg")
     st.title("Pengaruh Polutan terhadap Kualitas Udara di Nongzhanguan")
     st.markdown("""
 Pengaruh Polutan terhadap Kualitas Udara di Nongzhanguan\n
