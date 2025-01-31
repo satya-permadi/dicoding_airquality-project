@@ -1,16 +1,16 @@
-# Belajar Analisis Data dengan Python
+# Belajar Analisis Data dengan Python ✨
 # Pengaruh Polutan terhadap Kualitas Udara di Nongzhanguan
 
+### Nongzhanguan merupakan sebuah wilayah yang terletak di pusat kota Beijing, Tiongkok. Padatnya kota tersebut akan kendaraan yang menghasilkan polusi berlimpah menciptakan polutan-polutan yang dapat mencemari udara dan lingkungan. Mari kita simak datanya.
 
 ## Dataset: Air Quality
 
-[Air Quality Dataset]([https://github.com/marceloreis/HTI/tree/master](https://github.com/satya-permadi/dicoding_airquality-project/tree/main/AirQuality_Dataset))
+[Dataset Kualitas Udara](https://github.com/satya-permadi/dicoding_airquality-project/tree/main/AirQuality_Dataset)
 
 ## Streamlit Cloud :
 
-Streamlit Cloud : ([https://dicoding-airquality-naufal-rafid.streamlit.app/](https://dicodingairquality-project-satyapermadi.streamlit.app/))
+Streamlit Cloud : (https://dicodingairquality-project-satyapermadi.streamlit.app/)
 
-![Air Quality Dashboard Preview](images/dashboard.png)
 
 ## Setup environment
 
