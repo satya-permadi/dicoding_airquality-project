@@ -27,7 +27,9 @@ if menu == "Home":
 Pengaruh Polutan terhadap Kualitas Udara di Nongzhanguan\n
 Nama: Komang Satya Permadi\n
 Email: satyaintershuty@gmail.com\n
-ID Dicoding: satyapermadi
+ID Dicoding: satyapermadi\n
+
+Untuk mengetahui lebih jauh analisis dari pengaruh polutan terhadap kualitas udara di Nongzhanguan silahkan akses panel di samping.
     """)
 
 elif menu == "Pertanyaan 1":
