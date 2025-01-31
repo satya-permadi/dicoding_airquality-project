@@ -33,7 +33,7 @@ elif menu == "Pertanyaan 1":
     if df_all.empty:
         st.error("Data tidak tersedia. Pastikan file CSV telah dimuat dengan benar.")
     else:
-        st.subheader("Rata-rata Bulanan Konsentrasi Polutan")
+        st.subheader("Konsentrasi CO dan NO2 Selama Beberapa Tahun (Rata-rata Bulanan)")
     
         df_all['date_time_month'] = df_all['date_time'].dt.to_period('M')
 
@@ -57,7 +57,7 @@ elif menu == "Pertanyaan 1":
         sns.lineplot(x='date_time_month', y='SO2', data=monthly_avg, label='SO2', color='orange')
         sns.lineplot(x='date_time_month', y='O3', data=monthly_avg, label='O3', color='cyan')
 
-        plt.title('Rata-rata Bulanan Konsentrasi Polutan')
+        plt.title('Konsentrasi CO dan NO2 Selama Beberapa Tahun (Rata-rata Bulanan)')
         plt.xlabel('Bulan')
         plt.ylabel('Konsentrasi Polutan')
 
@@ -77,15 +77,15 @@ elif menu == "Pertanyaan 2":
     else:
         st.subheader("Bagaimana pengaruh hujan terhadap polutan penyebab polusi udara?")
 
-        df_all['RAIN_GROUP'] = pd.cut(df_all['RAIN'], bins=[0, 1, 4, 8, 10], labels=['No Rain', 'Light Rain', 'Moderate Rain', 'Heavy Rain'])
+        df_all['RAIN_GROUP'] = pd.cut(df_all['RAIN'], bins=[0, 1, 4, 8, 10], labels=['Tidak Ada Hujan', 'Hujan Ringan', 'Hujan Sedang', 'Hujan Lebat'])
 
         plt.figure(figsize=(12, 8))
         sns.boxplot(x='RAIN_GROUP', y='PM2.5', data=df_all)
-        plt.title('Boxplot of PM2.5 by Rain Intensity')
+        plt.title('Visualisasi Data dengan Box Plot antara PM2.5 dengan Intensitas Hujan di Nongzhanguan')
         plt.xticks(rotation=45)
         st.pyplot(plt)
 
-        df_all['RAIN_GROUP'] = pd.cut(df_all['RAIN'], bins=[0, 1, 4, 8, 10], labels=['No Rain', 'Light Rain', 'Moderate Rain', 'Heavy Rain'])
+        df_all['RAIN_GROUP'] = pd.cut(df_all['RAIN'], bins=[0, 1, 4, 8, 10], labels=['Tidak Ada Hujan', 'Hujan Ringan', 'Hujan Sedang', 'Hujan Lebatn'])
 
         rain_group_avg = df_all.groupby('RAIN_GROUP')['PM2.5'].mean().reset_index()
 
